@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="about.html" rel="import" />
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="bg-danger text-white d-flex justify-content-between align-items-center px-3 py-2">
+        <div class="d-flex align-items-center">
+            <img src="tele.png" style="border-radius: 50%; width: 30px; height: 30px;" alt="Phone"> 
+            <span>&nbsp;<i class="bi bi-telephone"></i> +91 88995 56633</span>
+            &nbsp;&nbsp;
+            <img src="mail.jpg" style="border-radius: 50%; width: 30px; height: 30px;" alt="Mail"> 
+            <span>&nbsp;<i class="bi bi-envelope"></i> contact@instakas.com</span>
+        </div>
+        <div class="d-none d-md-flex">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search Here" aria-label="Search">
+                <button class="btn btn-danger" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="d-flex">
+            <a href="login.html" target="_blank" class="btn btn-danger me-2">Login</a>
+            <a href="login.html" target="_blank" class="btn btn-danger">Signup</a>
+        </div>
+    </div>
+
+    <!-- Logo and Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="insta.png" width="90" height="90" style="margin-left: 40px;" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a>  
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
+                        <div class="hidden-content">
+                            <a href="galler.html"><b>GALLERY</b></a>
+                            
+                          </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="kpsc.html">KPSC</a>
+                        <div class="hidden-content">
+                            <a href="q.html"><b>PRELIMS OUESTION PAPER</b></a>
+                            <a href="mainsq.html"><b>MAINS OUESTION PAPER</b></a>
+                           
+                          </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="our.html">Courses</a>
+                        <div class="hidden-content">
+                            <a href="classpro.html"><b>CLASS PROGRAM</b></a>
+                            <a href="cdetails.html"><b>COURSE DETAILS</b></a>
+                            <a href="ipm.html"><b>IPM</b></a>
+                            <a href="prelims.html"><b>PRELIMS</b></a>
+                            <a href="mains.html"><b>MAINS</b></a>
+                          </div></li>
+                    <li class="nav-item"><a class="nav-link" href="topper.html">Topper’s Corner</a>
+                        <div class="hidden-content">
+                            <a href="results.html"><b>RESULTS</b></a>
+                           
+                           
+                          </div>
+                       </li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#resource">Resources</a>
+                        <div class="hidden-content">
+                            <a href="r1.html"><b>MCQ's</b></a>
+                            <a href="r2.html"><b>EDITORIALS</b></a>
+                           
+                          </div></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="ananya.html">Ananya Sadhana</a>
+                        <div class="hidden-content">
+                           
+                            <a href="index.html#books"><b>BOOKS</b></a>
+                          
+                          </div></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-bell">
+                        <a class="nav-bell" href="noti1.html">
+                            <img src="bell.jpg" alt="Notifications" width="24" height="24">
+                            <!-- Add notification count if needed -->
+                         
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scrolling Notification -->
+    <div class="bg-secondary text-white text-center py-2" style="font-size: larger;">
+        <marquee>Latest updates or notifications go here in a scrolling format... latest updates or notifications go here...</marquee>
+    </div>
+
+    <div class="abaner">
+        <img src="abaner.jpg" alt="banner"  class="aimg" style="width:100%; height: auto;">
+        <h1><b>Ananya Sadhana</b></h1>
+        <h5>A Monthly Current Affairs Magazine that caters to both KPSC & UPSC Prep</h5>
+        
+    </div>
+    <img src="abook1.png" alt="" class="abook1">
+    <div class="acont">
+
+        <div class="search-container1">
+     
+            
+            
+                <select id="state">
+                    <option value="">--Select State--</option>
+                </select>
+            </div>
+           
+        <div class="search-container2">
+     
+           
+                
+                <select id="district">
+                    <option value="">--Select District--</option>
+                </select>
+           
+        </div>
+      <P>Find a Store</P>
+      <input class="searchbar" type="search" placeholder="Search location" aria-label="Search ">
+   
+       
+    </div>
+   <script>
+    const stateDistrictMapping = {
+    "Andhra Pradesh": ["Anantapur", "Chittoor", "East Godavari", "Guntur", "Krishna", "Kurnool", "Prakasam", "Srikakulam", "Sri Potti Sriramulu Nellore", "Visakhapatnam", "Vizianagaram", "West Godavari", "YSR Kadapa"],
+    "Arunachal Pradesh": ["Anjaw", "Changlang", "Dibang Valley", "East Kameng", "East Siang", "Kamle", "Kra Daadi", "Kurung Kumey", "Lepa Rada", "Lohit", "Longding", "Lower Dibang Valley", "Lower Siang", "Lower Subansiri", "Namsai", "Pakke Kessang", "Papum Pare", "Shi Yomi", "Siang", "Tawang", "Tirap", "Upper Dibang Valley", "Upper Siang", "Upper Subansiri", "West Kameng", "West Siang"],
+    "Assam": ["Baksa", "Barpeta", "Biswanath", "Bongaigaon", "Cachar", "Charaideo", "Chirang", "Darrang", "Dhemaji", "Dhubri", "Dibrugarh", "Dima Hasao", "Goalpara", "Golaghat", "Hailakandi", "Hojai", "Jorhat", "Kamrup", "Kamrup Metropolitan", "Karbi Anglong", "Karimganj", "Kokrajhar", "Lakhimpur", "Majuli", "Morigaon", "Nagaon", "Nalbari", "Sivasagar", "Sonitpur", "South Salmara-Mankachar", "Tinsukia", "Udalguri", "West Karbi Anglong"],
+    "Bihar": ["Araria", "Arwal", "Aurangabad", "Banka", "Begusarai", "Bhagalpur", "Bhojpur", "Buxar", "Darbhanga", "East Champaran", "Gaya", "Gopalganj", "Jamui", "Jehanabad", "Kaimur", "Katihar", "Khagaria", "Kishanganj", "Lakhisarai", "Madhepura", "Madhubani", "Munger", "Muzaffarpur", "Nalanda", "Nawada", "Patna", "Purnia", "Rohtas", "Saharsa", "Samastipur", "Saran", "Sheikhpura", "Sheohar", "Sitamarhi", "Siwan", "Supaul", "Vaishali", "West Champaran"],
+    "Chhattisgarh": ["Balod", "Baloda Bazar", "Balrampur", "Bastar", "Bemetara", "Bijapur", "Bilaspur", "Dantewada", "Dhamtari", "Durg", "Gariaband", "Gaurela-Pendra-Marwahi", "Janjgir-Champa", "Jashpur", "Kabirdham", "Kanker", "Kondagaon", "Korba", "Koriya", "Mahasamund", "Mungeli", "Narayanpur", "Raigarh", "Raipur", "Rajnandgaon", "Sukma", "Surajpur", "Surguja"],
+    "Goa": ["North Goa", "South Goa"],
+    "Gujarat": ["Ahmedabad", "Amreli", "Anand", "Aravalli", "Banaskantha", "Bharuch", "Bhavnagar", "Botad", "Chhota Udaipur", "Dahod", "Dang", "Devbhoomi Dwarka", "Gandhinagar", "Gir Somnath", "Jamnagar", "Junagadh", "Kheda", "Kutch", "Mahisagar", "Mehsana", "Morbi", "Narmada", "Navsari", "Panchmahal", "Patan", "Porbandar", "Rajkot", "Sabarkantha", "Surat", "Surendranagar", "Tapi", "Vadodara", "Valsad"],
+    "Haryana": ["Ambala", "Bhiwani", "Charkhi Dadri", "Faridabad", "Fatehabad", "Gurugram", "Hisar", "Jhajjar", "Jind", "Kaithal", "Karnal", "Kurukshetra", "Mahendragarh", "Nuh", "Palwal", "Panchkula", "Panipat", "Rewari", "Rohtak", "Sirsa", "Sonipat", "Yamunanagar"],
+    "Himachal Pradesh": ["Bilaspur", "Chamba", "Hamirpur", "Kangra", "Kinnaur", "Kullu", "Lahaul and Spiti", "Mandi", "Shimla", "Sirmaur", "Solan", "Una"],
+    "Jharkhand": ["Bokaro", "Chatra", "Deoghar", "Dhanbad", "Dumka", "East Singhbhum", "Garhwa", "Giridih", "Godda", "Gumla", "Hazaribagh", "Jamtara", "Khunti", "Koderma", "Latehar", "Lohardaga", "Pakur", "Palamu", "Ramgarh", "Ranchi", "Sahebganj", "Seraikela-Kharsawan", "Simdega", "West Singhbhum"],
+    "Karnataka": ["Bagalkot", "Bangalore Rural", "Bangalore Urban", "Belgaum", "Bellary", "Bidar", "Chamarajanagar", "Chikballapur", "Chikkamagaluru", "Chitradurga", "Dakshina Kannada", "Davanagere", "Dharwad", "Gadag", "Gulbarga", "Hassan", "Haveri", "Kodagu", "Kolar", "Koppal", "Mandya", "Mysore", "Raichur", "Ramanagara", "Shimoga", "Tumkur", "Udupi", "Uttara Kannada", "Vijayapura", "Yadgir"],
+    "Kerala": ["Alappuzha", "Ernakulam", "Idukki", "Kannur", "Kasaragod", "Kollam", "Kottayam", "Kozhikode", "Malappuram", "Palakkad", "Pathanamthitta", "Thiruvananthapuram", "Thrissur", "Wayanad"],
+    "Madhya Pradesh": ["Agar Malwa", "Alirajpur", "Anuppur", "Ashoknagar", "Balaghat", "Barwani", "Betul", "Bhind", "Bhopal", "Burhanpur", "Chhatarpur", "Chhindwara", "Damoh", "Datia", "Dewas", "Dhar", "Dindori", "Guna", "Gwalior", "Harda", "Hoshangabad", "Indore", "Jabalpur", "Jhabua", "Katni", "Khandwa", "Khargone", "Mandla", "Mandsaur", "Morena", "Narsinghpur", "Neemuch", "Niwari", "Panna", "Raisen", "Rajgarh", "Ratlam", "Rewa", "Sagar", "Satna", "Sehore", "Seoni", "Shahdol", "Shajapur", "Sheopur", "Shivpuri", "Sidhi", "Singrauli", "Tikamgarh", "Ujjain", "Umaria", "Vidisha"],
+    "Maharashtra": ["Ahmednagar", "Akola", "Amravati", "Aurangabad", "Beed", "Bhandara", "Buldhana", "Chandrapur", "Dhule", "Gadchiroli", "Gondia", "Hingoli", "Jalgaon", "Jalna", "Kolhapur", "Latur", "Mumbai City", "Mumbai Suburban", "Nagpur", "Nanded", "Nandurbar", "Nashik", "Osmanabad", "Palghar", "Parbhani", "Pune", "Raigad", "Ratnagiri", "Sangli", "Satara", "Sindhudurg", "Solapur", "Thane", "Wardha", "Washim", "Yavatmal"],
+    "Manipur": ["Bishnupur", "Chandel", "Churachandpur", "Imphal East", "Imphal West", "Jiribam", "Kakching", "Kamjong", "Kangpokpi", "Noney", "Pherzawl", "Senapati", "Tamenglong", "Tengnoupal", "Thoubal", "Ukhrul"],
+    "Meghalaya": ["East Garo Hills", "East Jaintia Hills", "East Khasi Hills", "North Garo Hills", "Ri Bhoi", "South Garo Hills", "South West Garo Hills", "South West Khasi Hills", "West Garo Hills", "West Jaintia Hills", "West Khasi Hills"],
+    "Mizoram": ["Aizawl", "Champhai", "Kolasib", "Lawngtlai", "Lunglei", "Mamit", "Saiha", "Serchhip"],
+    "Nagaland": ["Dimapur", "Kiphire", "Kohima", "Longleng", "Mokokchung", "Mon", "Peren", "Phek", "Tuensang", "Wokha", "Zunheboto"],
+    "Odisha": ["Angul", "Balangir", "Balasore", "Bargarh", "Bhadrak", "Boudh", "Cuttack", "Debagarh", "Dhenkanal", "Gajapati", "Ganjam", "Jagatsinghpur", "Jajpur", "Jharsuguda", "Kalahandi", "Kandhamal", "Kendrapara", "Kendujhar", "Khordha", "Koraput", "Malkangiri", "Mayurbhanj", "Nabarangpur", "Nayagarh", "Nuapada", "Puri", "Rayagada", "Sambalpur", "Sonepur", "Sundargarh"],
+    "Punjab": ["Amritsar", "Barnala", "Bathinda", "Faridkot", "Fatehgarh Sahib", "Fazilka", "Ferozepur", "Gurdaspur", "Hoshiarpur", "Jalandhar", "Kapurthala", "Ludhiana", "Mansa", "Moga", "Muktsar", "Pathankot", "Patiala", "Rupnagar", "Sangrur", "SAS Nagar", "Shaheed Bhagat Singh Nagar", "Sri Muktsar Sahib", "Tarn Taran"],
+    "Rajasthan": ["Ajmer", "Alwar", "Banswara", "Baran", "Barmer", "Bharatpur", "Bhilwara", "Bikaner", "Bundi", "Chittorgarh", "Churu", "Dausa", "Dholpur", "Dungarpur", "Hanumangarh", "Jaipur", "Jaisalmer", "Jalore", "Jhalawar", "Jhunjhunu", "Jodhpur", "Karauli", "Kota", "Nagaur", "Pali", "Pratapgarh", "Rajsamand", "Sawai Madhopur", "Sikar", "Sirohi", "Sri Ganganagar", "Tonk", "Udaipur"],
+    "Sikkim": ["East Sikkim", "North Sikkim", "South Sikkim", "West Sikkim"],
+    "Tamil Nadu": ["Ariyalur", "Chengalpattu", "Chennai", "Coimbatore", "Cuddalore", "Dharmapuri", "Dindigul", "Erode", "Kallakurichi", "Kancheepuram", "Karur", "Krishnagiri", "Madurai", "Nagapattinam", "Namakkal", "Nilgiris", "Perambalur", "Pudukkottai", "Ramanathapuram", "Ranipet", "Salem", "Sivaganga", "Tenkasi", "Thanjavur", "Theni", "Thoothukudi", "Tiruchirappalli", "Tirunelveli", "Tirupattur", "Tiruppur", "Tiruvallur", "Tiruvannamalai", "Tiruvarur", "Vellore", "Viluppuram", "Virudhunagar"],
+    "Telangana": ["Adilabad", "Bhadradri Kothagudem", "Hyderabad", "Jagtial", "Jangaon", "Jayashankar Bhupalpally", "Jogulamba Gadwal", "Kamareddy", "Karimnagar", "Khammam", "Komaram Bheem Asifabad", "Mahabubabad", "Mahabubnagar", "Mancherial", "Medak", "Medchal-Malkajgiri", "Mulugu", "Nagarkurnool", "Nalgonda", "Narayanpet", "Nirmal", "Nizamabad", "Peddapalli", "Rajanna Sircilla", "Ranga Reddy", "Sangareddy", "Siddipet", "Suryapet", "Vikarabad", "Wanaparthy", "Warangal Rural", "Warangal Urban", "Yadadri Bhuvanagiri"],
+    "Tripura": ["Dhalai", "Gomati", "Khowai", "North Tripura", "Sepahijala", "South Tripura", "Unakoti", "West Tripura"],
+    "Uttarakhand": ["Almora", "Bageshwar", "Chamoli", "Champawat", "Dehradun", "Haridwar", "Nainital", "Pauri Garhwal", "Pithoragarh", "Rudraprayag", "Tehri Garhwal", "Udham Singh Nagar", "Uttarkashi"],
+    "Uttar Pradesh": ["Agra", "Aligarh", "Amethi", "Ambedkar Nagar", "Amroha", "Auraiya", "Ayodhya", "Azamgarh", "Baghpat", "Bahraich", "Ballia", "Balrampur", "Banda", "Barabanki", "Bareilly", "Basti", "Bhadohi", "Bijnor", "Budaun", "Bulandshahr", "Chandauli", "Chitrakoot", "Deoria", "Etah", "Etawah", "Farrukhabad", "Fatehpur", "Firozabad", "Gautam Buddha Nagar", "Ghaziabad", "Ghazipur", "Gonda", "Gorakhpur", "Hamirpur", "Hapur", "Hardoi", "Hathras", "Jalaun", "Jaunpur", "Jhansi", "Kannauj", "Kanpur Dehat", "Kanpur Nagar", "Kasganj", "Kaushambi", "Kheri", "Kushinagar", "Lalitpur", "Lucknow", "Maharajganj", "Mahoba", "Mainpuri", "Mathura", "Mau", "Meerut", "Mirzapur", "Moradabad", "Muzaffarnagar", "Pilibhit", "Pratapgarh", "Prayagraj", "Raebareli", "Rampur", "Saharanpur", "Sambhal", "Sant Kabir Nagar", "Shahjahanpur", "Shamli", "Shrawasti", "Siddharthnagar", "Sitapur", "Sonbhadra", "Sultanpur", "Unnao", "Varanasi"],
+    "West Bengal": ["Alipurduar", "Bankura", "Birbhum", "Cooch Behar", "Dakshin Dinajpur", "Darjeeling", "Hooghly", "Howrah", "Jalpaiguri", "Jhargram", "Kalimpong", "Kolkata", "Malda", "Murshidabad", "Nadia", "North 24 Parganas", "Paschim Bardhaman", "Paschim Medinipur", "Purba Bardhaman", "Purba Medinipur", "Purulia", "South 24 Parganas", "Uttar Dinajpur"],
+    "Andaman and Nicobar Islands": ["Nicobar", "North and Middle Andaman", "South Andaman"],
+    "Chandigarh": ["Chandigarh"],
+    "Dadra and Nagar Haveli and Daman and Diu": ["Dadra and Nagar Haveli", "Daman", "Diu"],
+    "Lakshadweep": ["Lakshadweep"],
+    "Delhi": ["Central Delhi", "East Delhi", "New Delhi", "North Delhi", "North East Delhi", "North West Delhi", "Shahdara", "South Delhi", "South East Delhi", "South West Delhi", "West Delhi"],
+    "Puducherry": ["Karaikal", "Mahe", "Puducherry", "Yanam"],
+};
+
+document.addEventListener("DOMContentLoaded", function() {
+    const stateSelect = document.getElementById("state");
+    const districtSelect = document.getElementById("district");
+
+    for (let state in stateDistrictMapping) {
+        let option = document.createElement("option");
+        option.value = state;
+        option.textContent = state;
+        stateSelect.appendChild(option);
+    }
+
+    stateSelect.addEventListener("change", function() {
+        districtSelect.innerHTML = "<option value=''>--Select District--</option>"; // Clear previous options
+        const selectedState = stateSelect.value;
+        if (selectedState) {
+            const districts = stateDistrictMapping[selectedState];
+            districts.forEach(district => {
+                const option = document.createElement("option");
+                option.value = district;
+                option.textContent = district;
+                districtSelect.appendChild(option);
+            });
+        }
+    });
+});
+
+   </script> 
+   
+
+   <div class="store-grid">
+    <div class="store-card">
+        <h2>Store Name</h2>
+        <p><strong>Address:</strong> Sri Raghavendra Chambers, LIG-B12, Main Road, D. A. S Rao Nagar(ECIL - POST), Hyderabad - 500062</p>
+        <p><strong>Contact:</strong> (+91) 1234567890</p>
+        <a href="#" class="directions-link">Get Directions</a>
+    </div>
+    <div class="store-card">
+        <h2>Store Name</h2>
+        <p><strong>Address:</strong> Sri Raghavendra Chambers, LIG-B12, Main Road, D. A. S Rao Nagar(ECIL - POST), Hyderabad - 500062</p>
+        <p><strong>Contact:</strong> (+91) 1234567890</p>
+        <a href="#" class="directions-link">Get Directions</a>
+    </div>
+    <div class="store-card">
+        <h2>Store Name</h2>
+        <p><strong>Address:</strong> Sri Raghavendra Chambers, LIG-B12, Main Road, D. A. S Rao Nagar(ECIL - POST), Hyderabad - 500062</p>
+        <p><strong>Contact:</strong> (+91) 1234567890</p>
+        <a href="#" class="directions-link">Get Directions</a>
+    </div>
+    <div class="store-card">
+        <h2>Store Name</h2>
+        <p><strong>Address:</strong> Sri Raghavendra Chambers, LIG-B12, Main Road, D. A. S Rao Nagar(ECIL - POST), Hyderabad - 500062</p>
+        <p><strong>Contact:</strong> (+91) 1234567890</p>
+        <a href="#" class="directions-link">Get Directions</a>
+    </div>
+    <div class="store-card">
+        <h2>Store Name</h2>
+        <p><strong>Address:</strong> Sri Raghavendra Chambers, LIG-B12, Main Road, D. A. S Rao Nagar(ECIL - POST), Hyderabad - 500062</p>
+        <p><strong>Contact:</strong> (+91) 1234567890</p>
+        <a href="#" class="directions-link">Get Directions</a>
+    </div>
+    <div class="store-card">
+        <h2>Store Name</h2>
+        <p><strong>Address:</strong> Sri Raghavendra Chambers, LIG-B12, Main Road, D. A. S Rao Nagar(ECIL - POST), Hyderabad - 500062</p>
+        <p><strong>Contact:</strong> (+91) 1234567890</p>
+        <a href="#" class="directions-link">Get Directions</a>
+    </div>
+    <div class="store-card">
+        <h2>Store Name</h2>
+        <p><strong>Address:</strong> Sri Raghavendra Chambers, LIG-B12, Main Road, D. A. S Rao Nagar(ECIL - POST), Hyderabad - 500062</p>
+        <p><strong>Contact:</strong> (+91) 1234567890</p>
+        <a href="#" class="directions-link">Get Directions</a>
+    </div>
+    <div class="store-card">
+        <h2>Store Name</h2>
+        <p><strong>Address:</strong> Sri Raghavendra Chambers, LIG-B12, Main Road, D. A. S Rao Nagar(ECIL - POST), Hyderabad - 500062</p>
+        <p><strong>Contact:</strong> (+91) 1234567890</p>
+        <a href="#" class="directions-link">Get Directions</a>
+    </div>
+    <!-- Add more store cards as needed -->
+</div>
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section logo-section">
+            <img src="insta.png" alt="Logo" class="footer-logo">
+            <p>Insta KAS has redefined, revolutionised, and simplified the way aspirants prepare for KPSC Civil Services Exam.</p>
+            <div class="social-icons">
+                <a href="facebook.com"><i class="fa fa-facebook"></i><img src="fb.jpg" alt=""></a>
+                <a href="#"><i class="fa fa-instagram"></i><img src="in.jpg" alt=""></a>
+                <a href="#"><i class="fa fa-linkedin"></i><img src="linkdin.jpg" alt=""></a>
+            </div>
+        </div>
+
+       
+        <div class="footer-section">
+            <h4>USEFUL LINKS</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kpsc.html">KPSC</a></li>
+                <li><a href="topper.html">Topper’s Corner</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="ananya.html">Ananya Sadhana</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>ABOUT US</h4>
+            <ul>
+                <li><a href="about.html">About Insta KAS</a></li>
+                <li><a href="results.html">Our Achievements</a></li>
+                <li><a href="contact.html">Branches</a></li>
+                <li><a href="about.html#faculty">Faculty</a></li>
+                <li><a href="galler.html">Gallery</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>COURSES</h4>
+            <ul>
+                <li><a href="classpro.html">Classroom Program</a></li>
+                <li><a href="ipm.html">IPM</a></li>
+                <li><a href="q.html">Prelims</a></li>
+                <li><a href="mainsq.html">Mains</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact-section">
+            <h4>CONTACT US</h4>
+            <ul>
+                <li><i class="fa fa-phone"></i> +91 8899556633</li>
+                <li><i class="fa fa-envelope"></i> info@instakas.com</li>
+                <li><i class="fa fa-map-marker"></i> InsightsIAS Headquarters, Nanda Ashirwad Complex, 3rd Floor, Above Village Hyper Market, Chandralayout Main Road, Attiguppe, Bengaluru - 560040</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2022 Insta KAS. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<!-- Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</html>

@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link href="about.html" rel="import" />
+</head>
+<body>
+    <!-- Top Bar -->
+    <div class="bg-danger text-white d-flex justify-content-between align-items-center px-3 py-2">
+        <div class="d-flex align-items-center">
+            <img src="tele.png" style="border-radius: 50%; width: 30px; height: 30px;" alt="Phone"> 
+            <span>&nbsp;<i class="bi bi-telephone"></i> +91 88995 56633</span>
+            &nbsp;&nbsp;
+            <img src="mail.jpg" style="border-radius: 50%; width: 30px; height: 30px;" alt="Mail"> 
+            <span>&nbsp;<i class="bi bi-envelope"></i> contact@instakas.com</span>
+        </div>
+        <div class="d-none d-md-flex">
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search Here" aria-label="Search">
+                <button class="btn btn-danger" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="d-flex">
+            <a href="login.html" target="_blank" class="btn btn-danger me-2">Login</a>
+            <a href="login.html" target="_blank" class="btn btn-danger">Signup</a>
+        </div>
+    </div>
+
+    <!-- Logo and Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="insta.png" width="90" height="90" style="margin-left: 40px;" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a>  
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
+                        <div class="hidden-content">
+                            <a href="galler.html"><b>GALLERY</b></a>
+                            
+                          </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="kpsc.html">KPSC</a>
+                        <div class="hidden-content">
+                            <a href="q.html"><b>PRELIMS OUESTION PAPER</b></a>
+                            <a href="mainsq.html"><b>MAINS OUESTION PAPER</b></a>
+                           
+                          </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="our.html">Courses</a>
+                        <div class="hidden-content">
+                            <a href="classpro.html"><b>CLASS PROGRAM</b></a>
+                            <a href="cdetails.html"><b>COURSE DETAILS</b></a>
+                            <a href="ipm.html"><b>IPM</b></a>
+                            <a href="prelims.html"><b>PRELIMS</b></a>
+                            <a href="mains.html"><b>MAINS</b></a>
+                          </div></li>
+                    <li class="nav-item"><a class="nav-link" href="topper.html">Topper’s Corner</a>
+                        <div class="hidden-content">
+                            <a href="results.html"><b>RESULTS</b></a>
+                           
+                           
+                          </div>
+                       </li>
+                    <li class="nav-item"><a class="nav-link" href="#resource">Resources</a>
+                        <div class="hidden-content">
+                            <a href="r1.html"><b>MCQ's</b></a>
+                            <a href="r2.html"><b>EDITORIALS</b></a>
+                           
+                          </div></li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="ananya.html">Ananya Sadhana</a>
+                        <div class="hidden-content">
+                           
+                            <a href="index.html#books"><b>BOOKS</b></a>
+                          
+                          </div></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-bell">
+                        <a class="nav-bell" href="noti1.html">
+                            <img src="bell.jpg" alt="Notifications" width="24" height="24">
+                            <!-- Add notification count if needed -->
+                         
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scrolling Notification -->
+    <div class="bg-secondary text-white text-center py-2" style="font-size: larger;">
+        <marquee>Latest updates or notifications go here in a scrolling format... latest updates or notifications go here...</marquee>
+    </div>
+
+    <!-- Banner Section -->
+    <div class="banner1 text-center">
+        <img src="banner1.jpg" class="img-fluid" alt="Banner" style="width: 100%; height: auto;">
+    </div>
+
+    <!-- Quote Section -->
+    <div class="container p-5 my-5 border rounded shadow-sm" style="background-color: rgb(253, 253, 253); max-width: 1000px; position: relative; margin-top: -300px;top: -100px;    border-radius: 10px;
+    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.1);">
+        <div class="d-flex flex-wrap justify-content-start align-items-center">
+            <img src="rec1.jpg" alt="Rec Image" class="img-fluid rounded-circle my-custom-img">
+
+            <section class="quote-section d-flex justify-content-center align-items-center flex-column text-center">
+                <blockquote class="blockquote">
+                    <p class="mb-0" style="font-family: 'Times New Roman', Times, serif; font-size: x-large;">
+                        <b>"Education is the most powerful weapon which <br> you can use to change the world."</b>
+                    </p>
+                    <footer class="blockquote-footer mt-2">NELSON MANDELA</footer>
+                </blockquote>
+            </section>
+        </div>
+    </div>
+    
+
+    <!-- Resource Section -->
+    <section id="resource" class="text-center py-5 bg-light">
+        <div class="title-text mb-4">
+            <p>Resources for the Day</p>
+        </div>
+        <h1 class="mb-4">Your Stepping Stones to Success</h1>
+        <div class="line"></div>
+        <div class="line1"></div>
+
+        <a href="jee.jpg" target="_blank">
+            
+            <div class="rectangle p-4 me-3 mb-3" >
+             <div class="rtext" >
+                    <h1><b>SECURE</b></h1>
+                    <h3>FOR MAINS</h3>
+                    <h5>22-04-2024</h5>
+                </div>
+                <img src="jee.jpg" class="jee img-fluid-right" alt="jee" style="width: 250px;"  >
+            </div>
+        </a>
+            <a href="mcq.jpg" target="_blank">
+            <div class="rectangle1 p-4 me-3 mb-3" >
+                <div class="r1text" >
+                    <h1><b>MCQ'S</b></h1>
+                    <h3>FOR PRELIMS</h3>
+                    <h5>22-04-2024</h5>
+                </div>
+                <img src="mcq.jpg" class="mcq img-fluid-right" alt="mcq" style="width: 300px;">
+            </div>
+            </a>
+
+            <div class="line2"></div>
+    </section>
+ <!-- our courses -->
+        <section id="our_courses" class="text-center py-5">
+            <div class="title-text mb-4">
+        <p>Our Courses</p>
+    </div>   
+    <h1 class="mb-4">Your Stepping Stones to Success</h1>
+        <div class="line"></div>
+        <div class="line1"></div>
+    <div class="banner2">
+        <img src="banner2.jpg" alt="bgm" class="background-image">
+        <img src="bell.jpg" alt="bell" class="overlay-image">
+        <div class="overlay-text"><h1>Comming Soon...</h1></div>
+    </div>
+ </section>
+
+
+  <!-- why us -->
+  <section id="why_us" class="text-center py-5">
+    <div class="title-text mb-4">
+        <p>Why Us</p>
+    </div>   
+    <h1 class="mb-4">Know about our approach for excellence</h1>
+        <div class="line"></div>
+        <div class="line1"></div>
+
+
+         <!-- Carousel -->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center">
+          <img src="college.jpg" alt="Integrated Classes" class="w-50">
+        </div>
+        <div class="carousel-caption">
+          <h5>Integrated Classes</h5>
+          <p>Caters to both Prelims & Exam</p>
+          <div class="line1"></div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center">
+          <img src="college.jpg" alt="Integrated Classes" class="w-50">
+          <div class="carousel-caption">
+            <h5>Integrated Classes</h5>
+            <p>Caters to both Prelims & Exam</p>
+            <div class="line1"></div>
+          </div>
+        
+        </div>
+        
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center">
+          <img src="college.jpg" alt="Integrated Classes" class="w-50">
+          <div class="carousel-caption">
+            <h5>Integrated Classes</h5>
+            <p>Caters to both Prelims & Exam</p>
+            <div class="line1"></div>
+          </div>
+         
+        </div>
+        
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only" style="color: black;">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only"style="color: black;">Next</span>
+    </a>
+  </div>
+
+  <div class="line2"></div>
+  </section>
+
+
+   <!-- Testimonials -->
+  <section id="Testimonials"  class="text-center py-5">
+    <div class="title-text mb-4">
+        <p>Testimonials</p>
+    </div>   
+    <h1 class="mb-4">Of our resolve to your triumph</h1>
+        <div class="line"></div>
+        <div class="line1"></div>
+
+<div class="containert">
+    <div class="row justify-content-center">
+        <div class="col-md-3 text-center">
+            <div class="testimonial">
+                <img src="img1.jpg" alt="Dr. Chikkappa Nayak">
+                <div class="rectangle3 p-2 me-2 mb-2">
+                    <div class="name">Dr. Chikkappa Nayak</div>
+                <div class="position">State 2nd Rank, Tashildar</div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="testimonial">
+                <div class="quote-icon">“</div>
+                <div class="quote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque commodi aliquam est animi expedita quis nam, magnam adipisci, ducimus perferendis aliquid. Eos dolore animi iure suscipit adipisci explicabo doloremque repudiandae ex dolorum beatae sit tempora esse est inventore aperiam quo incidunt cupiditate minima, nulla ipsa placeat. Vel, impedit? Quia, excepturi.</div>
+                <div class="quote-icon">”</div>
+            </div>
+        </div>
+        <div class="col-md-3 text-center">
+            <div class="testimonial">
+                <img src="img2.jpg" alt="Divya K Shetty">
+                <div class="rectangle4 p-2 me-2 mb-2">
+                <div class="name">Divya K Shetty</div>
+                <div class="position">Deputy Superintendent of Excise</div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="line3"></div>
+  </section>
+
+  <!--Gyana Kosha-->
+  <section id="gyana" class="text-center py-5">
+    <div class="title-text mb-4">
+        <p>Gyana Kosha</p>
+    </div>   
+    <h1 class="mb-4">A Compendium of Motivational sessions, expert views & Analysis</h1>
+        <div class="line"></div>
+        <div class="line1"></div>
+
+        <div class="parent">
+            <img class="image1" src="img3.jpg" width="583.75" height="327.29"/>
+       </div>
+       
+        <div class="child1">
+            <img class="image1" src="img3.jpg" width="394.97" height="221.45"/>
+       </div>
+        <div class="child2">
+            <img class="image1" src="img3.jpg" width="394.97" height="221.45"/>
+       </div>
+       <div class="line3"></div>
+  </section>
+
+ <!--trophy-->
+<section id="trophy">
+    <div class="t">
+    <img src="trophy.png" alt="trophy" width="494" height="263" >
+</div>
+<div class="texts"><b>Don't just take our word for it,<br>
+    our results speak for themselves.</b></div>
+    <div class="texts1">We are proud to have partnered with lakhs of students in securing their dream job.</div>
+    <div class="v1text">
+        <div class="vt1" ><b>2000+</b>
+             </div>
+             <div class="vt2">Selections</div>
+    </div>
+    <div class="vline"></div>
+    <div class="v2text">
+        <div class="v1t1" ><b>10+ years</b>
+             </div>
+             <div class="v1t2">of experienced faculties</div>
+    </div>
+    <div class="v1line"></div>
+   
+    <div class="v3text">
+        <div class="v2t1" ><b>40% conversion</b>
+             </div>
+             <div class="v2t2">rate from prelims to mains</div>
+</section>
+
+
+<section id="books">
+    <div class="containerb">
+        <div class="header">
+            <h1>Ananya Sadhana</h1>
+            <p>A Monthly Current Affairs Magazine that caters to both KPSC & UPSC Prep.</p>
+            <a href="#" class="subscribe-button">Subscribe Here</a>
+        </div>
+        <div class="magazine-covers1">
+            <img src="b1.jpg" alt="Magazine Cover 1" >
+            
+        </div>
+        <div class="magazine-covers2">
+            <img src="b2.jpg" alt="Magazine Cover 2" >
+            
+        </div>
+        <div class="magazine-covers3">
+            <img src="b3.jpg" alt="Magazine Cover 3" >
+            
+        </div>
+        <div class="magazine-covers4">
+            <img src="b1.jpg" alt="Magazine Cover 4" >
+            
+        </div>
+        <div class="magazine-covers5">
+            <img src="b2.jpg" alt="Magazine Cover 5" >
+            
+        </div>
+        <div class="magazine-covers6">
+            <img src="b3.jpg" alt="Magazine Cover 6" >
+            
+        </div>
+    </div>
+
+    <div class="rectangle5 p-2 me-2 mb-2">
+       <div class="ar"><img src="ar.png" alt="arrow" width="70" height="70" >
+    </div>
+    <h1>Subscribe to our Newsletter</h1>
+    <h5>Be a part of the InstaKAS Fraternity<br>
+        & get a step closer to your dreams!</h5>
+        <div class="email-section">
+            <form action="#" method="post" class="email-form">
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit" class="subscribe-btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!--footer-->
+<section id="footer">
+    <div class="insta">
+    <img src="insta.png" alt="Logo">
+    </div>
+    <div class="ftext">
+        <p>We have revolutionized, redefined and simplified the KPSC (KAS) Exam Preparation</p>
+    </div>
+     <div class="list">
+
+        <dl>
+            <dt>HOME</dt>
+            <dt>ABOUT US</dt>
+            <dd>Our Vision, Mission & Values</dd>
+            <dd> Our Faculty</dd>
+            <dd>Our Branches</dd>
+            <dt>KAS EXAM</dt>
+            <dd>Syllabus</dd>
+            <dd>PYQ papers</dd>
+            <dd>Results</dd>
+            <dt>COURSES</dt>
+            <dt>TOPPER'S CORNER</dt>
+            <dt>ANANYA SADHNA MAGZINE</dt>
+            <dt>RESOUSES</dt>
+            <dd>Secure for MAINS</dd>
+            <dd>MCQ's for prelims</dd>
+        </dl>
+  
+    </div>
+
+<div class="con">
+    <h4>Contact Us</h4>
+    <h6><b>Call Us:</b> +91 8899556633</h6>
+    <h6><b>Write to Us:</b> info@instakas.com</h6>
+</div>
+
+<div class="form-container">
+    <h4>LET US REACH YOU</h4>
+    <form action="#" method="POST">
+        <div class="form-group">
+            <input type="text" class="form-control" id="first-name" name="first_name" placeholder="First Name">
+        </div>
+        <div class="form-group">
+            <input type="text" class="form-control" id="last-name" name="last_name" placeholder="Last Name">
+        </div>
+        <div class="form-group">
+            <input type="tel" class="form-control" id="mobile-number" name="mobile_number" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number" placeholder="Mobile Number*">
+        </div>
+        <div class="form-group">
+            <input type="email" class="form-control" id="email-id" name="email_id" placeholder="Email ID*">
+        </div>
+        <div class="form-group">
+            <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your Message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-submit">Submit</button>
+    </form>
+</div>
+
+
+
+<div class="visit-us-container">
+    <h2 class="heading">VISIT US</h2>
+    <div class="branch-container">
+        <!-- Dharwad Branch -->
+        <div class="branch-info dharwad-branch">
+            <img src="address1.png" alt="QR Code Dharwad Branch" class="qr-code">
+            <h3>DHARWAD BRANCH</h3>
+            <p>
+                #12, 1st Floor, Loukya complex building, <br>
+                Saptapur last bus stop, <br>
+                Beside Sarvamangala Hospital <br>
+                Dharwad-580001
+            </p>
+            <div class="contact-icons">
+                <i class="phone-icon"></i>
+                <i class="email-icon"></i>
+            </div>
+        </div>
+
+        <!-- Map Illustration -->
+        <div class="map-container">
+            <img src="map.jpg" alt="Karnataka Map" class="map-image">
+        </div>
+
+        <!-- Bengaluru Branch -->
+        <div class="branch-info bengaluru-branch">
+            <img src="address2.png" alt="QR Code Bengaluru Branch" class="qr-code">
+            <h3>BENGALURU BRANCH</h3>
+            <p>
+                # 1134/1, 2nd Floor, Beside Sharavathi Hospital, Service Road, <br>
+                Opposite to Attiguppe Metro Station, RPC Layout, Vijayanagar, <br>
+                Bengaluru, Karnataka-560040
+            </p>
+            <div class="contact-icons">
+                <i class="phone-icon"></i>
+                <i class="email-icon"></i>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="line"></div>
+<div class="line1"></div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-section logo-section">
+            <img src="insta.png" alt="Logo" class="footer-logo">
+            <p>Insta KAS has redefined, revolutionised, and simplified the way aspirants prepare for KPSC Civil Services Exam.</p>
+            <div class="social-icons">
+                <a href="facebook.com"><i class="fa fa-facebook"></i><img src="fb.jpg" alt=""></a>
+                <a href="#"><i class="fa fa-instagram"></i><img src="in.jpg" alt=""></a>
+                <a href="#"><i class="fa fa-linkedin"></i><img src="linkdin.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="footer-section">
+            <h4>USEFUL LINKS</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="kpsc.html">KPSC</a></li>
+                <li><a href="topper.html">Topper’s Corner</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="ananya.html">Ananya Sadhana</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>ABOUT US</h4>
+            <ul>
+                <li><a href="about.html">About Insta KAS</a></li>
+                <li><a href="results.html">Our Achievements</a></li>
+                <li><a href="contact.html">Branches</a></li>
+                <li><a href="about.html#faculty">Faculty</a></li>
+                <li><a href="galler.html">Gallery</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>COURSES</h4>
+            <ul>
+                <li><a href="classpro.html">Classroom Program</a></li>
+                <li><a href="ipm.html">IPM</a></li>
+                <li><a href="q.html">Prelims</a></li>
+                <li><a href="mainsq.html">Mains</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section contact-section">
+            <h4>CONTACT US</h4>
+            <ul>
+                <li><i class="fa fa-phone"></i> +91 8899556633</li>
+                <li><i class="fa fa-envelope"></i> info@instakas.com</li>
+                <li><i class="fa fa-map-marker"></i> InsightsIAS Headquarters, Nanda Ashirwad Complex, 3rd Floor, Above Village Hyper Market, Chandralayout Main Road, Attiguppe, Bengaluru - 560040</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2022 Insta KAS. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#">Disclaimer</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <!-- Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
